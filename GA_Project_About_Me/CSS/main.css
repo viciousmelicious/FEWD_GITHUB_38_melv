@@ -2,13 +2,14 @@ p {
 	text-align: left;
 	color: green;
 }
-.subtext
-{text-align: middle
-	color: purple
+.subtext{
+	text-align: center;
+	color: purple;
 	text-size: 18px;
-	;}
+	}
 body {
 	background-color: #DEFFBD
+	font: Lucida Sans Unicode", "Lucida Grande", sans-serif;
 }
 img {
 	width: 300px;
