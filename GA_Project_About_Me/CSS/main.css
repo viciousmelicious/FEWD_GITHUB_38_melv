@@ -1,15 +1,27 @@
 p {
-	text-align: left;
+	text-align: center;
 	color: green;
 }
 .subtext{
-	text-align: center;
 	color: purple;
-	text-size: 18px;
+	font-size: 18px;
+	margin-top: 10px;
+    margin-right: 250px;
+    margin-left: 250px;
 	}
+.italics{
+	color: red;
+	font-style: italic;
+}
+.header-text {
+	text-align: center;
+	color: black;
+	font-size: 28px;
+	font-family: "Comic Sans MS", cursive, sans-serif;
+}
 body {
-	background-color: #DEFFBD
-	font-family: Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	background-color: #DEFFBD;
+	font-family: Arial, Helvetica, sans-serif;
 }
 img {
 	width: 300px;
@@ -25,9 +37,15 @@ border:1px solid black;
 	width: 300px;
 	margin-left: auto;
 	margin-right: auto;
-	text-align: center; 
+	text-align: left; 
 }
 .subhead {
 	font-size: 20px;
 	color: purple;
+}
+div {
+	width: 100px;
+    padding: 25px;
+    border: 20px green;
+    margin: 15px;
 }
