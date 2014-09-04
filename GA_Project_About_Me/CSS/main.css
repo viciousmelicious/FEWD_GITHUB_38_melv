@@ -39,6 +39,11 @@ border:1px solid black;
 	margin-right: auto;
 	text-align: left; 
 }
+#photos-container-left {
+	width: 300px;
+	margin-left: auto;
+	text-align: left; 
+}
 .subhead {
 	font-size: 20px;
 	color: purple;
