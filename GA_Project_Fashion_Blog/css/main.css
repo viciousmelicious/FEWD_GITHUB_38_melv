@@ -1,0 +1,78 @@
+body {
+  margin-left: 1em;
+  margin-right: 1em;
+  font-family: 'lato', sans-serif;
+  font-weight: 200;
+  font-size: 18px;
+  color: #000000;
+  max-width: 800px;
+}
+
+#title {
+  color: #f30000;
+  font-size: 2.5em;
+  font-weight: 200;
+}
+#headerNav a {
+    color: #dddddd;
+    font-size: 1em;
+    margin-right: 1em;
+    text-decoration: none;
+    padding-bottom: .11em;
+    border-bottom: .1em solid grey;
+}
+#footerNav a {
+    color: red;
+    font-size: .8em;
+    margin-right: .8em;
+    text-decoration: none;
+    padding-bottom: .11em;
+}
+
+.faded {
+  color: grey;
+}
+
+.mainContent {
+    font-size: .8em;
+    padding-top: 1.5em;
+    line-height: 1.5em;
+  }
+.dropCaps {
+  float: left;
+  color: #dddddd;
+  font-size: 5em;
+  padding-top: .25em;
+}
+.clear {
+    clear: both;
+    }
+.continueText {
+  margin-top: 2.5em;
+  color: #f30000;
+  font-weight: bold;
+  float: right;
+}
+
+#fadedHeadline {
+  margin-top: 2em;
+  color: grey;
+  font-weight: 100;
+
+}
+.heroImage {
+  height: 300px;
+  width: 100%  
+}
+h2 {
+  margin-top: .5em;
+  margin-bottom: .5em;
+  font-weight: 200;
+}
+h3 {
+  margin-top: .5em;
+  margin-bottom: 1.2em;
+  font-weight: 200;
+  font-size: 1.1em;
+  line-height: 1.1em;
+}
