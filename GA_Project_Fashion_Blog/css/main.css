@@ -6,6 +6,27 @@ body {
   font-size: 18px;
   color: #000000;
   max-width: 800px;
+  margin: 0 auto;
+}
+h2 {
+  margin-top: .5em;
+  margin-bottom: .5em;
+  font-weight: 200;
+}
+h3 {
+  margin-top: .5em;
+  margin-bottom: 1.2em;
+  font-weight: 300;
+  font-size: 1.1em;
+  line-height: 1.1em;
+}
+
+nav a:last-child {
+  background-color: green;
+}
+
+#headerNav a:hover {
+  color: blue;
 }
 
 #title {
@@ -16,21 +37,25 @@ body {
 #headerNav a {
     color: #dddddd;
     font-size: 1em;
-    margin-right: 1em;
+    margin-right: 1.1em;
     text-decoration: none;
     padding-bottom: .11em;
     border-bottom: .1em solid grey;
-}
+  }
 #footerNav a {
     color: red;
     font-size: .8em;
-    margin-right: .8em;
+    margin-right: .2em;
     text-decoration: none;
     padding-bottom: .11em;
 }
 
-.faded {
-  color: grey;
+.fadedHeadline {
+  margin-top: 1.5em;
+  color: #dddddd;
+}
+.center {
+  margin: 0 auto;
 }
 
 .mainContent {
@@ -41,8 +66,8 @@ body {
 .dropCaps {
   float: left;
   color: #dddddd;
-  font-size: 5em;
-  padding-top: .25em;
+  font-size: 6em;
+  padding: .3em .15em .25em 0;
 }
 .clear {
     clear: both;
@@ -53,6 +78,12 @@ body {
   font-weight: bold;
   float: right;
 }
+hr.style-one {
+    border: 0;
+    height: 1px;
+.pageDivider {
+      border-bottom: .1em solid grey;
+}
 
 #fadedHeadline {
   margin-top: 2em;
@@ -62,17 +93,12 @@ body {
 }
 .heroImage {
   height: 300px;
-  width: 100%  
+  width: 100%;
 }
-h2 {
-  margin-top: .5em;
-  margin-bottom: .5em;
-  font-weight: 200;
-}
-h3 {
-  margin-top: .5em;
-  margin-bottom: 1.2em;
-  font-weight: 200;
-  font-size: 1.1em;
-  line-height: 1.1em;
-}
+
+  display:inline-block;
+  transform:scale(1,2); /* W3C */
+  -webkit-transform:scale(1,2); /* Safari and Chrome */
+  -moz-transform:scale(1,2); /* Firefox */
+  -ms-transform:scale(1,2); /* IE 9 */
+  -o-transform:scale(1,2); /* Opera */
