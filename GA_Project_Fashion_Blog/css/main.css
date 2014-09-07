@@ -53,6 +53,7 @@ nav a:last-child {
 .fadedHeadline {
   margin-top: 1.5em;
   color: #dddddd;
+  margin-bottom: 1.5em;
 }
 .center {
   margin: 0 auto;
@@ -74,6 +75,7 @@ nav a:last-child {
     }
 .continueText {
   margin-top: 2.5em;
+  margin-bottom: 2em;
   color: #f30000;
   font-weight: bold;
   float: right;
@@ -81,6 +83,7 @@ nav a:last-child {
 hr.style-one {
     border: 0;
     height: 1px;
+  }
 .pageDivider {
       border-bottom: .1em solid grey;
 }
