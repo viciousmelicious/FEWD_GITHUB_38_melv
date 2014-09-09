@@ -20,13 +20,14 @@ h3 {
   font-size: 1.1em;
   line-height: 1.1em;
 }
+<!--This is a comment. I wanted to place with nav a and hover to see the results :)-->
 
 nav a:last-child {
   background-color: green;
 }
 
 #headerNav a:hover {
-  color: blue;
+  color: #f30000;
 }
 
 #title {
@@ -43,6 +44,7 @@ nav a:last-child {
     border-bottom: .1em solid grey;
   }
 #footerNav a {
+    margin-top: 2em;
     color: red;
     font-size: .8em;
     margin-right: .2em;
@@ -51,7 +53,7 @@ nav a:last-child {
 }
 
 .fadedHeadline {
-  margin-top: 1.5em;
+  padding-top: 2.5em;
   color: #dddddd;
   margin-bottom: 1.5em;
 }
@@ -74,8 +76,9 @@ nav a:last-child {
     clear: both;
     }
 .continueText {
-  margin-top: 2.5em;
   margin-bottom: 2em;
+  margin-top: 2.5em;
+  font-size: 1.2em;
   color: #f30000;
   font-weight: bold;
   float: right;
@@ -87,12 +90,6 @@ hr.style-one {
 .pageDivider {
       border-bottom: .1em solid grey;
 }
-
-#fadedHeadline {
-  margin-top: 2em;
-  color: grey;
-  font-weight: 100;
-
 }
 .heroImage {
   height: 300px;
