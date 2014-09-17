@@ -1,27 +1,53 @@
+.wrapper {
+  width: 600px;
+  height: 800px;
+  padding: 20px;
+  background-color: pink;
+}
+.buttonWrapper {
+  float: left;
+  margin-left: 30px;
+}
 #trafficlight {
   width: 300px;
   height: 800px;
-  background-color: black;
+  background-color: #CC9900;
   border: 2px solid black;
+  float: right;
 }
-#yellow {
+.red {
+  background-color: red;
+}
+.yellow {
   background-color: yellow;
 }
-#green {
+.green {
   background-color: green;
 }
-.shape-shifter {  
+.light {  
   width: 200px;
   height: 200px;
   border-radius:50%;
-  position: relative;
   margin: 3em;
-  background-color: red;
-  transition: background-color 1s ease .2s;
+  transition: background-color .5s ease .2s;
   cursor: pointer;
   border: 2px solid black;
 }
-.shape-shifter:hover {
+.commandButton {
+  width: 125px;
+  height: 125px;
+  margin-top: 3em;
+  padding: .33em;
+  left: 375px;
+  border: 2px solid black;
+  background-color: grey;
+  line-height: 125px;
+  text-align: center;
+  font-size: 32px;
+  cursor: pointer;
+}
+}
+.light:hover {
    background-color: white;
    opacity: .7;
 }
