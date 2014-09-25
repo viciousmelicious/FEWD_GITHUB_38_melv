@@ -20,7 +20,10 @@ h3 {
   font-size: 1.1em;
   line-height: 1.1em;
 }
-<!--This is a comment. I wanted to place with nav a and hover to see the results :)-->
+/*<!--This is a comment. I wanted to place with nav a and hover to see the results :)--> */
+/* Comments in css are wrapped between slash asterisks like this one. 
+ * Most modern browsers will (probably) understand what you're trying 
+ * to do and won't break your page. */
 
 nav a:last-child {
   background-color: green;
@@ -83,6 +86,7 @@ nav a:last-child {
   font-weight: bold;
   float: right;
 }
+/* It's overkill to specify the class and the element, unless there are other elements with that class on the page as well. I didn't see the 'style-one' class being used in your markup. */
 hr.style-one {
     border: 0;
     height: 1px;
@@ -90,19 +94,20 @@ hr.style-one {
 .pageDivider {
       border-bottom: .1em solid grey;
 }
-}
+/* } */
+/* Extra } on the line above. */
 .heroImage {
-  height: 300px;
+  height: auto; /* This will adjust the height automatically, so the picture's proportions/aspect-ratio remains correct */
   width: 100%;
 }
 
+/* You forgot to include a selector here
   display:inline-block;
   transform:scale(1,2); /* W3C */
-  -webkit-transform:scale(1,2); /* Safari and Chrome */
-  -moz-transform:scale(1,2); /* Firefox */
-  -ms-transform:scale(1,2); /* IE 9 */
-  -o-transform:scale(1,2); /* Opera */
-
+ /* -webkit-transform:scale(1,2); /* Safari and Chrome */
+ /* -moz-transform:scale(1,2); /* Firefox */ 
+ /* -ms-transform:scale(1,2); /* IE 9 */
+ /* -o-transform:scale(1,2); /* Opera */
 
 .clearfix:after {
    visibility: hidden;
