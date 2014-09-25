@@ -1,7 +1,10 @@
+<!DOCTYPE html> 
+<!-- You should always declare a doctype first, even before your html tag. -->
 <html>
 <head>
 	<title>Satre's List: Fashion for the Fashionable</title>
-	<link rel='stylesheet' type='text/css'  href="CSS/main.css">
+    <!-- Technically, you should use doublequotes for rel and type. But, most modern browsers won't care. -->
+	<link rel="stylesheet" type="text/css"  href="CSS/main.css">
 </head>
 
 <body>
@@ -25,6 +28,9 @@
 		<p class="continueText">Continues...</p>
 	</article>
 
+    <!-- Why didn't you use article tags for this post? No wrong answer, I'm just curious because they're both styled the same way in the comp.
+        In fact, the markup structure between the two posts should really be the same, right? For example, you're using the maincontent class in the post below, but not in the post above.
+        Using the same markup structure (with the same classes) makes life easier for us by allowing us to use the same css selectors and consistently get the same styling. -->
 	<h2 class="fadedHeadline">11/11/13</h2>
 	<h2>Vintage in Vogue</h2>
 	<img class="heroImage" src="Images/fashion_photo2.jpg"/>
@@ -33,7 +39,8 @@
 	<p class="continueText">Continues...</p>
 	</div>
 	<div>	
-		<p class="pageDivider"</p>
+    <!-- The paragraph tag wasn't closed properly -->
+    <p class="pageDivider"></p>
 	</div>
 	<div>
 	<nav id="footerNav" class="center">
