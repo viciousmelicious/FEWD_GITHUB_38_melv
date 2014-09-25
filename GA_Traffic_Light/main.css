@@ -46,7 +46,8 @@
   font-size: 32px;
   cursor: pointer;
 }
-}
+/* Extra } brace */
+/* } */
 .light:hover {
    background-color: white;
    opacity: .7;
