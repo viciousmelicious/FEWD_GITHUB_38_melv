@@ -101,7 +101,7 @@ hr.style-one {
   width: 100%;
 }
 
-/*
+/* You forgot to include a selector here
   display:inline-block;
   transform:scale(1,2); /* W3C */
  /* -webkit-transform:scale(1,2); /* Safari and Chrome */
