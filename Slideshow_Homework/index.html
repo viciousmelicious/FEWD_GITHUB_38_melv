@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="css/main.css">
+		<script type="text/javascript" src="js/main.js"></script>
+	</head>
+<head>
+<body>
+<div id="myTV"><div id="myScreen"></div></div>
+<div id= "mainContainer">
+	<div id="thumbs">
+		<div class="thumb" onclick="changePicture(0)"><img src="img/angry-cat-0.jpg" /></div>
+		<div class="thumb" onclick="changePicture(1)"><img src="img/angry-cat-1.jpg" /></div>
+		<div class="thumb" onclick="changePicture(2)"><img src="img/angry-cat-2.jpg" /></div>
+		<div class="thumb" onclick="changePicture(3)"><img src="img/angry-cat-3.jpg" /></div>
+		<div class="thumb" onclick="changePicture(4)"><img src="img/angry-cat-4.jpg" /></div>
+	</div>
+<script type="text/javascript">
+var myScreen = document.getElementById('thumb');
+var myPics = ['img/angry-cat-0.jpg','img/angry-cat-1.jpg','img/angry-cat-2.jpg','img/angry-cat-3.jpg'];
+var totalPics = myPics.length;
+var i = 0;
+function loop() {
+	if(i > (totalPics - 1)){
+		i = 0;
+	}
+	myScreen.innerHTML = '<img src="screen_pics/'+myPics[i]+'">';
+	i++;
+	loopTimer = setTimeout('loop()',3000);
+}
+loop();
+</script>
+</body>
+</html>
