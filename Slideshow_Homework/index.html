@@ -1,34 +1,39 @@
+<!-- Your indenting is still a bit wonky. It seems like a small issue, but getting the formatting right in your html is the firszt step toward building a kick ass program. If your formatting's off, the rest of your program will probably be off as well. Before you start anything with JavaScript, make sure your HTML is cleanly written and well formatted (<html>, <head>, and <body> tags all flush with the back wall of your program. Everything else indented; Check for any missing closing tags; When writing empty divs, their opening and closing tags should be on the same line.) These changes will save you hours of headachs when you're debugging your code later. Cleanliness is step one on the road to awesome-ness. -->
+
 <!DOCTYPE html>
 <html>
-	<head>
-		<link rel="stylesheet" type="text/css" href="css/main.css">
-		<script type="text/javascript" src="js/main.js"></script>
-	</head>
 <head>
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<script type="text/javascript" src="js/main.js"></script>
+</head>
+<head> <!-- Don't need this <head> tag -->
 <body>
-<div id="myTV"><div id="myScreen"></div></div>
-<div id= "mainContainer">
-	<div id="thumbs">
-		<div class="thumb" onclick="changePicture(0)"><img src="img/angry-cat-0.jpg" /></div>
-		<div class="thumb" onclick="changePicture(1)"><img src="img/angry-cat-1.jpg" /></div>
-		<div class="thumb" onclick="changePicture(2)"><img src="img/angry-cat-2.jpg" /></div>
-		<div class="thumb" onclick="changePicture(3)"><img src="img/angry-cat-3.jpg" /></div>
-		<div class="thumb" onclick="changePicture(4)"><img src="img/angry-cat-4.jpg" /></div>
-	</div>
-<script type="text/javascript">
-var myScreen = document.getElementById('thumb');
-var myPics = ['img/angry-cat-0.jpg','img/angry-cat-1.jpg','img/angry-cat-2.jpg','img/angry-cat-3.jpg'];
-var totalPics = myPics.length;
-var i = 0;
-function loop() {
-	if(i > (totalPics - 1)){
-		i = 0;
-	}
-	myScreen.innerHTML = '<img src="screen_pics/'+myPics[i]+'">';
-	i++;
-	loopTimer = setTimeout('loop()',3000);
-}
-loop();
-</script>
+	<div id="myTV"><div id="myScreen"></div></div> <!-- What are these tags doing? -->
+	<div id="mainContainer"> <!-- Nice! Good div nesting. -->
+		<div id="thumbs">
+			<div class="thumb" onclick="changePicture(0)"><img src="img/angry-cat-0.jpg" /></div>
+			<div class="thumb" onclick="changePicture(1)"><img src="img/angry-cat-1.jpg" /></div>
+			<div class="thumb" onclick="changePicture(2)"><img src="img/angry-cat-2.jpg" /></div>
+			<div class="thumb" onclick="changePicture(3)"><img src="img/angry-cat-3.jpg" /></div>
+			<div class="thumb" onclick="changePicture(4)"><img src="img/angry-cat-4.jpg" /></div>
+		</div>
+	</div> <!-- Missing this closing <div> -->
+
+	<script type="text/javascript"> // JavaScript in your HTML code is usually not a great idea. Makes your code messier. Always try and store your JS in a seperate file.
+		var myScreen = document.getElementById('thumb');
+		var myPics = ['img/angry-cat-0.jpg','img/angry-cat-1.jpg','img/angry-cat-2.jpg','img/angry-cat-3.jpg'];
+		var totalPics = myPics.length;
+		var i = 0;
+		function loop() {  // From the look of this function, I'm guessing you're still not totally comfortable loops. Don't worry. After you use them for a while, they'll become second nature, promise.
+			if(i > (totalPics - 1)){
+				i = 0;
+			}
+			myScreen.innerHTML = '<img src="screen_pics/'+myPics[i]+'">';
+			i++;
+			var loopTimer = setTimeout('loop()',3000);
+		}
+		loop();
+	</script>
+
 </body>
 </html>
