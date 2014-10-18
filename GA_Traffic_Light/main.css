@@ -1,13 +1,19 @@
+/* You should always put an empty line between css rules */
+/* Consider organizing your css rules from least specific to most specific */
+
+
 .wrapper {
   width: 600px;
   height: 800px;
   padding: 20px;
   background-color: pink;
 }
+
 .buttonWrapper {
   float: left;
   margin-left: 30px;
 }
+
 #trafficlight {
   width: 300px;
   height: 800px;
@@ -15,15 +21,19 @@
   border: 2px solid black;
   float: right;
 }
+
 .red {
   background-color: red;
 }
+
 .yellow {
   background-color: yellow;
 }
+
 .green {
   background-color: green;
 }
+
 .light {  
   width: 200px;
   height: 200px;
@@ -33,6 +43,7 @@
   cursor: pointer;
   border: 2px solid black;
 }
+
 .commandButton {
   width: 125px;
   height: 125px;
@@ -46,12 +57,12 @@
   font-size: 32px;
   cursor: pointer;
 }
-/* Extra } brace */
-/* } */
+
 .light:hover {
    background-color: white;
    opacity: .7;
 }
+
 .inactive {
   background-color: white;
    opacity: .7;

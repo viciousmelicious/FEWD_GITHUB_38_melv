@@ -1,4 +1,4 @@
-var images = ["img/angry-cat-0.jpg", "img/angry-cat-1.jpg", "img/angry-cat-2.jpg", "img/angry-cat-3.jpg", "img/angry-cat-4.jpg"];
+var images = ["img/angry_cat_0.jpg", "img/angry_cat_1.jpg", "img/angry_cat_2.jpg", "img/angry_cat_3.jpg", "img/angry_cat_4.jpg"];
 var currentImage = 0;
 
 function changePicture(whichNum) {
@@ -7,6 +7,9 @@ function changePicture(whichNum) {
 	currentImage = whichNum;
 }
 
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
 function nextImage() {										//declare function(whichNum)
 	var img = document.getElementById('mainImage');			//declare variable img = get mainImage element from DOM, also tried to active gEBI to 'next button' to affect that element and it also broke the code...argh!
 	if (currentImage>images.length){						//if currentImage is greater than the lenght of images array
@@ -21,6 +24,69 @@ function prevImage() {										//declare function(whichNum)
 	if (currentImage = -1) {								//
 		currentImage = 0;
 	}
+=======
+function nextImage() {										
+	currentImage++;
+															
+	if (currentImage >= images.length){						
+		currentImage = 0;									
+	}
+	
+	var img = document.getElementById('mainImage');														
+	img.setAttribute('src', images[currentImage]);				
+}
+
+function prevImage() {										
+	currentImage = currentImage - 1;
+
+	if (currentImage == -1) {								
+		currentImage = images.length - 1;
+	}
+
+	var img = document.getElementById('mainImage');
+>>>>>>> FETCH_HEAD
+=======
+function nextImage() {										
+	currentImage++;
+															
+	if (currentImage >= images.length){						
+		currentImage = 0;									
+	}
+	
+	var img = document.getElementById('mainImage');														
+	img.setAttribute('src', images[currentImage]);				
+}
+
+function prevImage() {										
+	currentImage = currentImage - 1;
+
+	if (currentImage == -1) {								
+		currentImage = images.length - 1;
+	}
+
+	var img = document.getElementById('mainImage');
+>>>>>>> FETCH_HEAD
+=======
+function nextImage() {										
+	currentImage++;
+															
+	if (currentImage >= images.length){						
+		currentImage = 0;									
+	}
+	
+	var img = document.getElementById('mainImage');														
+	img.setAttribute('src', images[currentImage]);				
+}
+
+function prevImage() {										
+	currentImage = currentImage - 1;
+
+	if (currentImage == -1) {								
+		currentImage = images.length - 1;
+	}
+
+	var img = document.getElementById('mainImage');
+>>>>>>> FETCH_HEAD
 	img.setAttribute('src', images[currentImage]);
 }
 
