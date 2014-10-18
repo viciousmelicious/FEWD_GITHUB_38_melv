@@ -10,6 +10,7 @@ function changePicture(whichNum) {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 function nextImage() {										//declare function(whichNum)
 	var img = document.getElementById('mainImage');			//declare variable img = get mainImage element from DOM, also tried to active gEBI to 'next button' to affect that element and it also broke the code...argh!
 	if (currentImage>images.length){						//if currentImage is greater than the lenght of images array
@@ -24,6 +25,27 @@ function prevImage() {										//declare function(whichNum)
 	if (currentImage = -1) {								//
 		currentImage = 0;
 	}
+=======
+function nextImage() {										
+	currentImage++;
+															
+	if (currentImage >= images.length){						
+		currentImage = 0;									
+	}
+	
+	var img = document.getElementById('mainImage');														
+	img.setAttribute('src', images[currentImage]);				
+}
+
+function prevImage() {										
+	currentImage = currentImage - 1;
+
+	if (currentImage == -1) {								
+		currentImage = images.length - 1;
+	}
+
+	var img = document.getElementById('mainImage');
+>>>>>>> FETCH_HEAD
 =======
 function nextImage() {										
 	currentImage++;
