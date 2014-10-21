@@ -31,7 +31,7 @@ h6 {
     padding-bottom: 50px;
     text-align: center;
     color: #f8f8f8;
-    background: url(../img/banner-bg.jpg) no-repeat center center;
+    background: url(../img/banner-bg.jpg) no-repeat center center;  /* How to i add a cool effect here for intro image??*/
     background-size: cover;
 }
 
@@ -160,6 +160,11 @@ footer {
     padding: 50px 0;
     background-color: #f8f8f8;
 }
+.img-responsive {
+  border-radius: 30px;
+  border: 2px solid #a1a1a1;
+  overflow: hidden;
+  }
 
 p.copyright {
     margin: 15px 0 0;

@@ -937,7 +937,7 @@ img {
   display: block;
   width: 100% \9;
   max-width: 100%;
-  height: auto;
+  height: 200px;
 }
 .img-rounded {
   border-radius: 6px;
@@ -1217,6 +1217,7 @@ a.bg-danger:hover {
   padding-bottom: 9px;
   margin: 40px 0 20px;
   border-bottom: 1px solid #eee;
+  font-family: 'Oswald', sans-serif; font-weight: 600;
 }
 ul,
 ol {
@@ -3125,7 +3126,7 @@ tbody.collapse.in {
 .dropdown-toggle:focus {
   outline: 0;
 }
-.dropdown-menu {
+.m,n {
   position: absolute;
   top: 100%;
   left: 0;
