@@ -1,35 +1,49 @@
 // A $( document ).ready() block.
 $( document ).ready(function() {
-    console.log( "ready!" );
-   	showBreakfast();
-   	showLunch();
-   	showDinner();
-   	showDessert();
-   
+   showDessert();
+   showLunch(); 
+   showDinner(); 
+   showBreakfast();  
 });
 // HOW DO I 'RESET' IMAGES EACH TIME I WANT TO CHOOSE A DIFFERENT MEAL, ALSO SOME MEALS ARE BOTH SO DON'T WANT THEM TO DISAPPEAR WHEN CLICKED ON LUNCH, DINNER, ETC//
 function showBreakfast(){
 	$("#breakfast").on("click", function(){    		//function hideItalin is firing off on everything with class .noItalian when clicked
-		$(".col-md-4:not(.breakfast)").fadeOut();					//everything that has class .italian is hidden. deleting div "row" will allow showcase to move up
+		hideAll();  
+		$('.breakfast').removeClass('meal-hidden');					//everything that has class .italian is hidden. deleting div "row" will allow showcase to move up
 	})
 }
 
 function showLunch(){
 	$("#lunch").on("click", function(){
-		console.log('fired');
-		$(".col-md-4:not(.lunch)").fadeOut();
+		hideAll();
+		$('.lunch').removeClass('meal-hidden');
 	})
 }
 function showDinner(){
 	$("#dinner").on("click", function(){
-		console.log('fired');
-		$(".col-md-4:not(.dinner)").fadeOut();
+		hideAll();
+		$('.dinner').removeClass('meal-hidden');
 	})
 }
 function showDessert(){
 	$("#dessert").on("click", function(){
-		console.log('fired');
-		$(".col-md-4:not(.dessert)").fadeIn();
-		$(".col-md-4:not(.dessert)").fadeOut();  //trying to get this to work...get other non-desserts to fade in before fading out??
+		hideAll();
+		$('.dessert').removeClass('meal-hidden');
+		//$('.dessert').addClass('meal-shown');
 	})
+}
+
+function reset() {
+	var meals = [".breakfast", ".lunch", ".dinner", ".dessert"]
+	$.each(meals, function(index, value){
+		$(meals[index]).removeClass('meal-hidden'); 
+ 	})
+}
+
+function hideAll() {
+	var meals = [".breakfast", ".lunch", ".dinner", ".dessert"]
+	$.each(meals, function(index, value){
+		//$(meals[index]).removeClass('meal-shown'); 
+		$(meals[index]).addClass('meal-hidden');
+ 	})
 }

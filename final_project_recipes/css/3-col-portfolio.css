@@ -24,6 +24,15 @@ footer {
     margin: 50px 0;
 }
 
+.meal-hidden {
+	display: none !important;
+	/*put TRANSITIONS HERE!!!*/
+}
+
+.meal-shown {
+	visibility: visible;
+}
+
 .filter {
 	float: right;
 	margin-right: 45px;
@@ -41,9 +50,15 @@ footer {
   border-radius: 30px;
   border: 2px solid #a1a1a1;
   overflow: hidden;
+  width: 100%;
+  max-width: 400px;
+  height: 250px;
 }
 
 img:hover {
   color: green;
+  cursor: pointer;
   opacity: .5;
 }
+
+
