@@ -4,6 +4,7 @@ $( document ).ready(function() {
    showLunch(); 
    showDinner(); 
    showBreakfast();  
+   showMeals();
 });
 // HOW DO I 'RESET' IMAGES EACH TIME I WANT TO CHOOSE A DIFFERENT MEAL, ALSO SOME MEALS ARE BOTH SO DON'T WANT THEM TO DISAPPEAR WHEN CLICKED ON LUNCH, DINNER, ETC//
 function showBreakfast(){
@@ -30,6 +31,11 @@ function showDessert(){
 		hideAll();
 		$('.dessert').removeClass('meal-hidden');
 		//$('.dessert').addClass('meal-shown');
+	})
+}
+function showMeals(){
+	$("#meals").on("click", function(){
+		reset();
 	})
 }
 
