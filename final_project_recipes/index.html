@@ -44,15 +44,12 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
-                    <li>
-                        <a href="#">About</a>
-                    </li>
-                    <li>
-                        <a href="#">Recipes</a>
-                    </li>
-                    <li>
-                        <a href="#">Foodporn</a>
-                    </li>
+                    <li><a href="#" id="meals">All Meals</a></li>
+                    <li><a href="#" id="breakfast">Breakfast</a></li>
+                    <li><a href="#" id="lunch">Lunch</a></li>
+                    <li><a href="#" id="dinner">Dinner</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#" id="dessert">Dessert</a></li>
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
@@ -67,9 +64,7 @@
         <div class="row">
             <div class="col-lg-12">
                 <div class="btn-group filter">
-                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
-                        Meals <span class="caret"></span>
-                    </button>
+                    
                     <ul class="dropdown-menu" role="menu">
                         <li><a href="#" id="meals">All Meals</a></li>
                         <li><a href="#" id="breakfast">Breakfast</a></li>
@@ -87,6 +82,7 @@
         <!-- /.row -->
         <!-- Projects Row -->
         <div class="row">
+        <div class="column">
             <div class="col-md-4 portfolio-item dinner">
                 <a href="http://www.epicurious.com/recipes/food/views/Lamb-Chops-with-Everything-Bagel-Yogurt-and-Chickpeas-51248810">
                     <div class="img-responsive">
@@ -120,7 +116,9 @@
                 </h3>
                 <p>Popular in Israel, this shakshuka works for breakfast then all day long.</p>
             </div>
-      
+        </div>
+     <!-- Projects Row -->
+        <div class="column">
             <div class="col-md-4 portfolio-item dinner">
                 <a href="http://www.epicurious.com/articlesguides/bestof/toprecipes/bestpastarecipes/recipes/food/views/Pasta-with-Veal-Sausage-and-Porcini-Ragu-103450">
                     <div class="img-responsive">
@@ -128,7 +126,7 @@
                     </div>
                 </a>
                 <h3>
-                    <a href="http://www.epicurious.com/articlesguides/bestof/toprecipes/bestpastarecipes/recipes/food/views/Pasta-with-Veal-Sausage-and-Porcini-Ragu-103450">Pasta with Veal, Sausage and Porcini Ragù</a>
+                    <a href="http://www.epicurious.com/articlesguides/bestof/toprecipes/bestpastarecipes/recipes/food/views/Pasta-with-Veal-Sausage-and-Porcini-Ragu-103450">Veal, Sausage and Porcini Ragù</a>
                 </h3>
                 <p>Ragù is a beloved part of Tuscan cooking, and this hearty sauce is constant.</p>
             </div>
@@ -141,7 +139,7 @@
                 <h3>
                     <a href="http://www.epicurious.com/recipes/food/views/Fish-Tacos-352976">Fish Tacos</a>
                 </h3>
-                <p>While the original taco was made deep-fried, this recipe—made with sautéed fish—is a delicious and fresh version.</p>
+                <p>While the original taco was made deep-fried, this recipe—made sautéed.</p>
             </div>
             <div class="col-md-4 portfolio-item dessert">
                 <a href="http://www.epicurious.com/recipes/food/views/Grandmas-Pumpkin-Pie-51122220">
@@ -190,6 +188,7 @@
                 </h3>
                 <p>This recipe-a rhapsody for sweet, bitter, and salty satisfies all three.</p>
             </div>
+        </div>
         <!-- /.row -->
         </div>
         <hr>
@@ -230,7 +229,7 @@
         <footer>
             <div class="row">
                 <div class="col-lg-12">
-                    <p>Copyright &copy; Your Website 2014</p>
+                    <p>Copyright &copy; viciousmelicious incorporated 2014</p>
                 </div>
             </div>
             <!-- /.row -->
